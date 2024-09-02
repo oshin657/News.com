@@ -1,0 +1,540 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+#menu a:hover{
+    color: blue;
+}
+
+
+#popular:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: repeat(3,200px);
+}
+
+#sport{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    margin-top: 50px;
+}
+
+#robot{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+#popular{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#business{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+#bigimg{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#protesters{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin-top: 10px;
+}
+
+#protesters a{
+    text-decoration: none;
+    color: black;
+}
+
+#protesters h3:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#protesters p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#dead:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#weather{
+    grid-column: 3/4;
+    grid-row: 5/6;
+    margin-top: 200px;
+}
+
+#book{
+    background-color: #E5E8EA;
+}
+
+#end{
+    background-color: black;
+    color: white;
+    width: 200px;
+    padding-left: 30px;
+}
+
+#last{
+    list-style-type: none;
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+    padding-left: 0;
+}
+
+
+
+
+#last a{
+    text-decoration: none;
+    color: black;
+}
+
+#media{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    padding-left: 0;
+}
+
+#media a{
+    color: black;
+}
+
+#no{
+    list-style-type: none;
+    display: flex;
+    justify-content:space-between;
+    padding-left: 0%;
+}
+
+#no a{
+    color: black;
+    text-decoration: none;
+}
+
+
+#sponsor{
+   text-align: center;
+}
+
+#book2{
+    background-color: #E5E8EA;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+#pinto{
+    width: 900px;
+}
+
+#oshin{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#oshin span{
+    font-style: italic;
+}
+
+
+@media (max-width: 576px) {
+
+    #grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    #sport,
+    #robot,
+    #popular,
+    #business,
+    #bigimg,
+    #weather,
+    #protesters {
+        grid-column: 1 / -1;
+        grid-row: auto;
+        margin-top: 20px;
+    }
+
+   
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    
+    h3 {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    p {
+        text-align: left;
+        margin: 0 10px;
+    }
+
+    .col-6 img {
+        width: 100%;
+        height: auto;
+    }
+
+    
+    #book img {
+        width: 50%;
+        height: auto;
+    }
+
+    
+    .col-3 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .col-3 img {
+        width: 100%;
+        height: auto;
+    }
+
+    h5, h6 {
+        text-align: center;
+    }
+
+    p {
+        text-align: left;
+        margin: 0 10px;
+    }
+
+    #end {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    #last {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    #last li {
+        margin-bottom: 10px;
+    }
+
+    #follow{
+        text-align: start;
+    }
+
+    #media {
+        flex-direction: row;
+        justify-content: start;
+        gap: 20px;
+    }
+
+    #media i {
+        font-size: 20px; 
+    }
+
+    #no {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0;
+        margin: 10px 0;
+        font-size: 14px; 
+        flex-wrap: wrap; 
+    }
+    
+    #no li {
+        margin: 5px;
+    }
+    
+    #no a {
+        text-decoration: none;
+        color: black;
+    }
+
+
+    h2 {
+        font-size: 22px;
+        padding: 10px;
+    }
+
+    h5 {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .col-8, .col-6, .col-7 {
+        width: 100%;
+        margin: 0;
+        padding: 0 15px;
+    }
+
+    #bigimg, #pinto {
+        width: 100%;
+    }
+
+    #book2 img {
+        width: 50%;
+    }
+
+    .text-secondary {
+        text-align: center;
+    }
+
+    #sponsor img {
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
+    .nav-link {
+        font-size: 0.75rem; 
+    }
+
+    .nav-link h5 {
+        font-size: 0.65rem; 
+    }
+
+    
+    #grid {
+        display: block; 
+        margin-left: 0; 
+    }
+
+    #bigimg {
+        margin-bottom: 20px; 
+    }
+
+    #bigimg img {
+        width: 100%; 
+        height: auto;
+    }
+
+    #protesters h3 {
+        font-size: 1.2rem; 
+    }
+
+    #protesters p {
+        font-size: 1rem; 
+    }
+
+    #popular, #robot, #business, #sport{
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+
+    #weather {
+       margin-top: 50px;
+    }
+
+    #popular img, #robot img, #business img, #sport img, #weather img {
+        width: 100%; 
+        height: auto;
+    }
+
+    #popular h5, #robot h5, #business h5, #sport h5, #weather h3 {
+        font-size: 1.2rem; 
+    }
+
+    #popular p, #robot p, #business p {
+        font-size: 0.9rem;
+    }
+
+    #weather p {
+        font-size: 0.8rem; 
+    }
+
+    ul {
+        padding-left: 20px; 
+    }
+
+    .button {
+        width: 100%; 
+        padding: 12px;
+        text-align: center; 
+    }
+
+    .row {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .col-6 {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+
+    h5 {
+        font-size: 0.90rem; 
+    }
+
+    p {
+        font-size: 0.85rem; 
+    }
+
+    img {
+        width: 100%; 
+        height: auto;
+    }
+
+    #book {
+        text-align: center; 
+    }
+
+    #book img {
+        width: 50%; 
+        height: auto;
+    }
+
+    .row {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .col-3 {
+        width: 100%; 
+        margin-bottom: 20px; 
+        text-align: center; 
+    }
+
+    .col-3 img {
+        width: 100%; 
+        max-width: 300px; 
+        height: auto; 
+    }
+
+    h6 {
+        font-size: 1rem; 
+    }
+
+    p {
+        font-size: 0.9rem; 
+    }
+
+    #no {
+        font-size: 0.85rem; 
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+        padding-left: 0; 
+        gap: 15px; 
+    }
+
+    #no li {
+        margin: 0; 
+    }
+
+    #sponsor {
+        text-align: center; 
+    }
+
+    #sponsor img {
+        width: 80%; 
+        height: auto;
+    }
+
+   
+    #sponsor h3, #sponsor p {
+        font-size: 0.85rem; 
+    }
+
+    section {
+        text-align: center; 
+        margin: 0; 
+    }
+
+    h2 {
+        font-size: 1.5rem; 
+        margin: 20px 0; 
+    }
+
+    #bigimg {
+        width: 100%; 
+        max-width: 800px; 
+        height: auto; 
+        display: block;
+        margin: 20px auto;
+    }
+
+    .col-6, .col-7 {
+        width: 100%; 
+        padding-left: 15px; 
+        padding-right: 15px; 
+        box-sizing: border-box; 
+        margin: 0 auto; 
+        text-align: center;
+    }
+
+    .text-secondary p {
+        font-size: 0.9rem; 
+        margin: 10px 0; 
+    }
+
+    h5 {
+        font-size: 0.9rem; 
+        line-height: 1.4; 
+        margin: 10px 0; 
+    }
+
+    #book2 {
+        text-align: center;
+        margin: 0 auto; 
+    }
+
+    #book2 img {
+        width: 80%; 
+        max-width: 300px; 
+        height: auto; 
+        display: block; 
+        margin: 0 auto; 
+    }
+
+    .mt-3 {
+        text-align: center; 
+    }
+
+    .col-7 {
+        width: 100%; 
+        padding-left: 15px; 
+        padding-right: 15px; 
+    }
+
+    #pinto {
+        width: 90%; 
+        max-width: 400px; 
+        height: auto;
+        display: block; 
+        margin: 20px auto; 
+    }
+
+    h5 {
+        font-size: 0.9rem; 
+        line-height: 1.4; 
+        margin: 0 15px;
+    }
+
+}
+
+
+
+
