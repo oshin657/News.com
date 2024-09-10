@@ -154,6 +154,94 @@
     font-style: italic;
 }
 
+/* Existing CSS */
+/* ... */
+
+
+@media (max-width: 414px) {
+    #end {
+        font-size: 28px; 
+        padding-left: 20px; 
+        text-align: center; 
+        margin-bottom: 20px; 
+    }
+
+    #last {
+        flex-direction: column; 
+        align-items: center; 
+        width: auto; 
+        padding-left: 0; 
+        margin-bottom: 20px; 
+    }
+
+    #last li {
+        margin-bottom: 10px; 
+        font-size: 16px; 
+    }
+
+    #last a {
+        color: #0A4EA0; 
+        text-decoration: none; 
+        font-weight: bold; 
+    }
+
+    #last a:hover {
+        text-decoration: underline; 
+    }
+
+    #media {
+        flex-direction: row; 
+        justify-content: center; 
+        width: auto;
+        padding: 0;
+        margin-bottom: 20px; 
+    }
+
+    #media a {
+        margin: 0 10px; 
+        font-size: 24px; 
+        color: black; 
+    }
+
+    #media a:hover {
+        color: #F52549; 
+    }
+
+    #no {
+        flex-direction: column; 
+        align-items: start; 
+        width: auto;
+        padding: 0; 
+    }
+
+    #no li {
+        margin-bottom: 10px; 
+        font-size: 14px; 
+    }
+
+    #no a {
+        color: #0A4EA0; 
+        text-decoration: none; 
+    }
+
+    #no a:hover {
+        text-decoration: underline; 
+    }
+
+    #oshin {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+        margin-top: 20px; 
+    }
+
+    #oshin h3 {
+        font-size: 20px; 
+        color: #0A4EA0;
+    }
+}
+
+
 
 @media (max-width: 576px) {
 
